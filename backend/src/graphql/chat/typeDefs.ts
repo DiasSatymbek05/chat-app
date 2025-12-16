@@ -15,6 +15,7 @@ export const chatTypeDefs = gql`
     lastMessage: Message
     type: ChatType!
     isDeleted: Boolean!
+    creator: User!       
     createdAt: String!
     updatedAt: String!
   }
@@ -30,10 +31,13 @@ export const chatTypeDefs = gql`
     getChat(id: ID!): Chat
     getChatsForUser(userId: ID!): [Chat!]!
   }
+ 
 
   type Mutation {
     createChat(input: CreateChatInput!): Chat!
-    joinChat(chatId: ID!, userId: ID!): Chat!
-    leaveChat(chatId: ID!, userId: ID!): Chat!
+    joinChat(chatId: ID!): Chat!  
+    leaveChat(chatId: ID!): Chat!  
+    deleteChat(chatId: ID!): Chat!
+  removeMemberFromChat(chatId: ID!, memberId: ID!): Chat!
   }
 `;

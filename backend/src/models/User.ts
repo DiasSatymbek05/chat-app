@@ -1,6 +1,8 @@
-import mongoose, { Schema, Document, model } from 'mongoose';
+import mongoose, { Schema, Document, model, Types } from 'mongoose';
 
 export interface IUser extends Document {
+   _id: Types.ObjectId; 
+   id?: string;
   username: string;
   firstName: string;
   lastName: string;
@@ -28,5 +30,10 @@ const UserSchema: Schema = new Schema<IUser>(
   },
   { timestamps: true }
 );
+UserSchema.set('toObject', { virtuals: true });
+UserSchema.set('toJSON', { virtuals: true });
 
+UserSchema.virtual('id').get(function (this: IUser) {
+  return this._id.toHexString();
+});
 export const User = model<IUser>('User', UserSchema);

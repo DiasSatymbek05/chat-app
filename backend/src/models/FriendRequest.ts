@@ -4,6 +4,7 @@ import { IUser } from './User';
 export type FriendRequestStatus = 'pending' | 'accepted' | 'rejected';
 
 export interface IFriendRequest extends Document {
+  _id: Types.ObjectId;   
   requester: Types.ObjectId | IUser;
   recipient: Types.ObjectId | IUser;
   status: FriendRequestStatus;

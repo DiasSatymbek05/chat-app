@@ -25,4 +25,9 @@ export const messageTypeDefs = gql`
   type Mutation {
     sendMessage(input: SendMessageInput!): Message!
   }
-`;
+    type Subscription {
+  messageSent(chatId: ID!): Message!
+}
+
+`
+;

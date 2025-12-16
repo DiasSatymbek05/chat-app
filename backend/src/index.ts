@@ -1,45 +1,82 @@
+import http from 'http';
 import express from 'express';
-import { ApolloServer, gql } from 'apollo-server-express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { connectDB } from './config/db';
 
-// 🔹 Импорт моделей
-import { User } from './models/User';
-import { Chat } from './models/Chat';
-import { Message } from './models/Message';
-import { FriendRequest } from './models/FriendRequest';
-import { Subscription } from './models/Subscription';
+import { ApolloServer } from 'apollo-server-express';
+import { WebSocketServer } from 'ws';
+import { useServer } from 'graphql-ws/use/ws';
+import { makeExecutableSchema } from '@graphql-tools/schema';
+import jwt from 'jsonwebtoken';
+
+import { connectDB } from './config/db';
+import { typeDefs } from './graphql/schema';
+import { resolvers } from './graphql/resolvers';
+import { authMiddleware, AuthRequest } from './middleware/auth';
 
 dotenv.config();
-
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-// Простейший typeDefs + resolver для health-check
-const typeDefs = gql`
-  type Query {
-    _health: String
-  }
-`;
-
-const resolvers = {
-  Query: {
-    _health: () => 'ok',
-  },
-};
 
 async function startServer() {
   await connectDB();
 
-  const server = new ApolloServer({ typeDefs, resolvers });
-  await server.start();
-  server.applyMiddleware({ app: app as any });
+  const app = express();
+  app.use(cors());
+  app.use(express.json());
+
+  app.use(authMiddleware);
+
+  const httpServer = http.createServer(app);
+
+ 
+  const schema = makeExecutableSchema({
+    typeDefs,
+    resolvers,
+  });
+
+  const apolloServer = new ApolloServer({
+    schema,
+    context: ({ req }: { req: AuthRequest }) => {
+    
+      return { user: req.user };
+    },
+  });
+
+  await apolloServer.start();
+  apolloServer.applyMiddleware({ app: app as any });
+
+ 
+  const wsServer = new WebSocketServer({
+    server: httpServer,
+    path: apolloServer.graphqlPath,
+  });
+
+  useServer(
+    {
+      schema,
+      context: (ctx: any) => {
+       
+        const token = ctx.connectionParams?.Authorization?.split(' ')[1];
+        if (!token) return { user: null };
+
+        try {
+          const secret = process.env.JWT_SECRET;
+          if (!secret) throw new Error('JWT_SECRET is not defined');
+
+          const decoded = jwt.verify(token, secret) as { userId: string };
+          return { user: { userId: decoded.userId } };
+        } catch (err) {
+          console.warn('Invalid JWT in WS:', err);
+          return { user: null };
+        }
+      },
+    },
+    wsServer
+  );
 
   const PORT = process.env.PORT || 4000;
-  app.listen(PORT, () => {
-    console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`);
+  httpServer.listen(PORT, () => {
+    console.log(`🚀 HTTP  http://localhost:${PORT}${apolloServer.graphqlPath}`);
+    console.log(`🚀 WS    ws://localhost:${PORT}${apolloServer.graphqlPath}`);
   });
 }
 

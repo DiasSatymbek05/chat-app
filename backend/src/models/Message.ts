@@ -3,10 +3,12 @@ import { IUser } from './User';
 import { IChat } from './Chat';
 
 export interface IMessage extends Document {
+  _id: Types.ObjectId;   
   text: string;
-  sender?: Types.ObjectId | IUser;
-  chat: Types.ObjectId | IChat;
-  readBy: Types.ObjectId[] | IUser[];
+ sender?: Types.ObjectId;
+chat: Types.ObjectId;
+readBy: Types.ObjectId[];
+
   attachments?: string[];
   createdAt: Date;
   updatedAt: Date;

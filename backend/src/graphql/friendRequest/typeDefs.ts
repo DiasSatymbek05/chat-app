@@ -24,7 +24,7 @@ export const friendRequestTypeDefs = gql`
   }
 
   type Query {
-    getFriendRequests(userId: ID!): [FriendRequest!]!
+    getFriendRequests: [FriendRequest!]!
   }
 
   type Mutation {
