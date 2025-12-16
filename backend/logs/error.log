@@ -18,3 +18,15 @@ ValidationError: User validation failed: username: Path `username` is required.,
     at model.$__save (F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:369:5)
     at model.save (F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:609:5)
     at F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:2722:9
+2025-12-17 03:18:22 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 03:24:12 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 03:26:31 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

@@ -6,14 +6,18 @@
 
     "rootDir": "./src",
     "outDir": "./dist",
+
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
+
     "types": ["node"],
     "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": false, 
+    "exactOptionalPropertyTypes": false,
     "isolatedModules": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["tests", "node_modules", "dist"]
 }

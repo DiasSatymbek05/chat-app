@@ -51,3 +51,31 @@ ValidationError: User validation failed: username: Path `username` is required.,
     at F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:2722:9
 2025-12-17 01:43:41 [info]: Register attempt for username: akzhol, email: a
 2025-12-17 01:43:41 [info]: User registered successfully: 6941c47dc008fdcc2ba24dfd
+2025-12-17 03:18:22 [info]: Register attempt for username: testuser, email: test@test.com
+2025-12-17 03:18:22 [info]: User registered successfully: 6941daae850e45026016aa4b
+2025-12-17 03:18:22 [info]: Login attempt for email: test@test.com
+2025-12-17 03:18:22 [warn]: Login failed: invalid credentials for email: test@test.com
+2025-12-17 03:18:22 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 03:24:12 [info]: Register attempt for username: testuser, email: test@test.com
+2025-12-17 03:24:12 [info]: User registered successfully: 6941dc0c2fb8061508092f0e
+2025-12-17 03:24:12 [info]: Login attempt for email: test@test.com
+2025-12-17 03:24:12 [warn]: Login failed: invalid credentials for email: test@test.com
+2025-12-17 03:24:12 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 03:26:31 [info]: Register attempt for username: testuser, email: test@test.com
+2025-12-17 03:26:31 [info]: User registered successfully: 6941dc97c1c8e9e93ce9d47d
+2025-12-17 03:26:31 [info]: Login attempt for email: test@test.com
+2025-12-17 03:26:31 [warn]: Login failed: invalid credentials for email: test@test.com
+2025-12-17 03:26:31 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 03:28:13 [info]: Register attempt for username: testuser, email: test@test.com
+2025-12-17 03:28:13 [info]: User registered successfully: 6941dcfd6925e17a0fd5810d
+2025-12-17 03:28:13 [info]: Login attempt for email: test@test.com
+2025-12-17 03:28:13 [info]: User logged in successfully: 6941dcfd6925e17a0fd5810d
