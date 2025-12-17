@@ -26,7 +26,7 @@ export const messageTypeDefs = gql`
     sendMessage(input: SendMessageInput!): Message!
   }
     type Subscription {
-  messageSent(chatId: ID!): Message!
+  messageSent(chatId: ID!): Message
 }
 
 `

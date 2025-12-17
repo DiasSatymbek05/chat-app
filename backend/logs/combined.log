@@ -79,3 +79,851 @@ GraphQLError: Invalid credentials
 2025-12-17 03:28:13 [info]: User registered successfully: 6941dcfd6925e17a0fd5810d
 2025-12-17 03:28:13 [info]: Login attempt for email: test@test.com
 2025-12-17 03:28:13 [info]: User logged in successfully: 6941dcfd6925e17a0fd5810d
+2025-12-17 03:46:58 [info]: Register attempt for username: testuser, email: test@test.com
+2025-12-17 03:46:58 [info]: User registered successfully: 6941e162e9053cfaa00604f2
+2025-12-17 03:46:58 [info]: Login attempt for email: test@test.com
+2025-12-17 03:46:58 [info]: User logged in successfully: 6941e162e9053cfaa00604f2
+2025-12-17 05:27:25 [info]: Login attempt for email: admin@test.com
+2025-12-17 05:27:25 [warn]: Login failed: invalid credentials for user 6941e1e4770866d910d1fc37
+2025-12-17 05:27:25 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:131:17)
+2025-12-17 05:28:59 [info]: Register attempt for username: akzhol, email: a@gmail.com
+2025-12-17 05:28:59 [info]: User registered successfully: 6941f94b569f20056e78db78
+2025-12-17 05:29:13 [info]: Login attempt for email: a@gmail.com
+2025-12-17 05:29:13 [info]: User logged in successfully: 6941f94b569f20056e78db78
+2025-12-17 05:42:03 [info]: Register attempt for username: akzhol, email: akzhol@gmail.com
+2025-12-17 05:42:03 [warn]: Registration failed: user already exists for username/email: akzhol/akzhol@gmail.com
+2025-12-17 05:42:03 [error]: User already exists
+GraphQLError: User already exists
+    at Object.registerUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:79:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 05:43:28 [info]: Register attempt for username: AkzholSmolov, email: akzhol@gmail.com
+2025-12-17 05:43:28 [info]: User registered successfully: 6941fcb0569f20056e78db7e
+2025-12-17 05:44:01 [info]: Login attempt for email: akzhol@gmail.com
+2025-12-17 05:44:02 [info]: User logged in successfully: 6941fcb0569f20056e78db7e
+2025-12-17 05:52:20 [info]: Login attempt for email: akzhol@gmail.com
+2025-12-17 05:52:20 [info]: User logged in successfully: 6941fcb0569f20056e78db7e
+2025-12-17 05:55:14 [info]: Login attempt for email: akzhol@gmail.com
+2025-12-17 05:55:14 [info]: User logged in successfully: 6941fcb0569f20056e78db7e
+2025-12-17 06:06:05 [info]: Login attempt for email: akzhol@gmail.com
+2025-12-17 06:06:05 [info]: User logged in successfully: 6941fcb0569f20056e78db7e
+2025-12-17 06:11:13 [info]: Login attempt for email: akzhol@gmail.com
+2025-12-17 06:11:13 [info]: User logged in successfully: 6941fcb0569f20056e78db7e
+2025-12-17 06:18:18 [info]: Register attempt for username: akzholkozhatai, email: akzholkozhatai@gmail.com
+2025-12-17 06:18:18 [info]: User registered successfully: 694204da569f20056e78db8b
+2025-12-17 06:18:23 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:18:23 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 06:19:00 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:19:00 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 06:50:08 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:50:09 [warn]: Login failed: invalid credentials for user 694204da569f20056e78db8b
+2025-12-17 06:50:09 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:131:17)
+2025-12-17 06:50:43 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:50:43 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 06:53:23 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:53:23 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 06:55:56 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:55:56 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 06:57:50 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 06:57:50 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:01:14 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:01:14 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:11:35 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:11:35 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:12:34 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:12:34 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:12:41 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:12:41 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:13:36 [info]: Register attempt for username: akzhol1, email: ak@gmail.com
+2025-12-17 07:13:36 [info]: User registered successfully: 694211d0eefde916b8fc81be
+2025-12-17 07:27:29 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:27:29 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:32:07 [info]: Fetching all users
+2025-12-17 07:32:07 [info]: Returned 5 users
+2025-12-17 07:45:20 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:45:20 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:45:20 [info]: Fetching all users
+2025-12-17 07:45:20 [info]: Returned 5 users
+2025-12-17 07:45:21 [info]: Fetching all users
+2025-12-17 07:45:21 [info]: Returned 5 users
+2025-12-17 07:48:02 [info]: Fetching all users
+2025-12-17 07:48:02 [info]: Returned 5 users
+2025-12-17 07:48:11 [info]: Fetching all users
+2025-12-17 07:48:11 [info]: Returned 5 users
+2025-12-17 07:48:12 [info]: Fetching all users
+2025-12-17 07:48:12 [info]: Returned 5 users
+2025-12-17 07:48:12 [info]: Fetching all users
+2025-12-17 07:48:12 [info]: Returned 5 users
+2025-12-17 07:48:13 [info]: Fetching all users
+2025-12-17 07:48:13 [info]: Returned 5 users
+2025-12-17 07:48:14 [info]: Fetching all users
+2025-12-17 07:48:14 [info]: Returned 5 users
+2025-12-17 07:51:09 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 07:51:09 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 07:51:09 [info]: Fetching all users
+2025-12-17 07:51:09 [info]: Returned 5 users
+2025-12-17 07:51:26 [info]: User 694204da569f20056e78db8b sending friend request to 6941fcb0569f20056e78db7e
+2025-12-17 07:51:26 [info]: Friend request created from 694204da569f20056e78db8b to 6941fcb0569f20056e78db7e
+2025-12-17 08:01:56 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 08:01:56 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 08:01:58 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:01:58 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:09:07 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:09:07 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:09:11 [info]: Fetching all users
+2025-12-17 08:09:11 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:09:11 [info]: Returned 5 users
+2025-12-17 08:09:11 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:11 [info]: Fetching all users
+2025-12-17 08:10:11 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:11 [info]: Returned 5 users
+2025-12-17 08:10:11 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:24 [info]: Fetching all users
+2025-12-17 08:10:24 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:24 [info]: Returned 5 users
+2025-12-17 08:10:24 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:25 [info]: Fetching all users
+2025-12-17 08:10:25 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:25 [info]: Returned 5 users
+2025-12-17 08:10:25 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:33 [info]: User 694204da569f20056e78db8b sending friend request to 6941f94b569f20056e78db78
+2025-12-17 08:10:33 [info]: Friend request created from 694204da569f20056e78db8b to 6941f94b569f20056e78db78
+2025-12-17 08:10:37 [info]: User 694204da569f20056e78db8b sending friend request to 6941f94b569f20056e78db78
+2025-12-17 08:10:37 [warn]: Friend request already exists from 694204da569f20056e78db8b to 6941f94b569f20056e78db78
+2025-12-17 08:10:37 [error]: Friend request already sent
+GraphQLError: Friend request already sent
+    at Object.sendFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:87:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:10:41 [info]: Fetching all users
+2025-12-17 08:10:41 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:41 [info]: Returned 5 users
+2025-12-17 08:10:41 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:41 [info]: Fetching all users
+2025-12-17 08:10:41 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:10:41 [info]: Returned 5 users
+2025-12-17 08:10:41 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:12:56 [info]: User 694204da569f20056e78db8b sending friend request to 694211d0eefde916b8fc81be
+2025-12-17 08:12:56 [info]: Friend request created from 694204da569f20056e78db8b to 694211d0eefde916b8fc81be
+2025-12-17 08:12:56 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:12:56 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:12:59 [info]: User 694204da569f20056e78db8b sending friend request to 694211d0eefde916b8fc81be
+2025-12-17 08:12:59 [warn]: Friend request already exists from 694204da569f20056e78db8b to 694211d0eefde916b8fc81be
+2025-12-17 08:12:59 [error]: Friend request already sent
+GraphQLError: Friend request already sent
+    at Object.sendFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:87:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:13:40 [info]: Fetching all users
+2025-12-17 08:13:40 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:13:40 [info]: Returned 5 users
+2025-12-17 08:13:40 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:14:24 [info]: Fetching all users
+2025-12-17 08:14:24 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:14:24 [info]: Returned 5 users
+2025-12-17 08:14:24 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:14:29 [info]: User 694204da569f20056e78db8b sending friend request to 6941f94b569f20056e78db78
+2025-12-17 08:14:29 [warn]: Friend request already exists from 694204da569f20056e78db8b to 6941f94b569f20056e78db78
+2025-12-17 08:14:29 [error]: Friend request already sent
+GraphQLError: Friend request already sent
+    at Object.sendFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:87:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:14:50 [info]: Fetching all users
+2025-12-17 08:14:50 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:14:50 [info]: Returned 5 users
+2025-12-17 08:14:50 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:14:53 [info]: User 694204da569f20056e78db8b sending friend request to 694211d0eefde916b8fc81be
+2025-12-17 08:14:53 [info]: Friend request created from 694204da569f20056e78db8b to 694211d0eefde916b8fc81be
+2025-12-17 08:18:06 [info]: Fetching all users
+2025-12-17 08:18:06 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:18:06 [info]: Returned 5 users
+2025-12-17 08:18:06 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:18:09 [info]: User 694204da569f20056e78db8b sending friend request to 6941fcb0569f20056e78db7e
+2025-12-17 08:18:09 [info]: Friend request created from 694204da569f20056e78db8b to 6941fcb0569f20056e78db7e
+2025-12-17 08:18:15 [info]: Fetching all users
+2025-12-17 08:18:15 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:18:15 [info]: Returned 5 users
+2025-12-17 08:18:15 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:18:17 [info]: Fetching all users
+2025-12-17 08:18:17 [info]: Fetching friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:18:17 [info]: Returned 5 users
+2025-12-17 08:18:17 [info]: Returned 0 friend requests for user 694204da569f20056e78db8b
+2025-12-17 08:24:02 [info]: Fetching all users
+2025-12-17 08:24:02 [info]: Returned 5 users
+2025-12-17 08:24:03 [info]: Fetching all users
+2025-12-17 08:24:03 [info]: Returned 5 users
+2025-12-17 08:24:04 [info]: Fetching all users
+2025-12-17 08:24:04 [info]: Returned 5 users
+2025-12-17 08:27:08 [info]: User 694204da569f20056e78db8b sending friend request to 6941f94b569f20056e78db78
+2025-12-17 08:27:08 [info]: Friend request created from 694204da569f20056e78db8b to 6941f94b569f20056e78db78
+2025-12-17 08:27:13 [info]: Fetching all users
+2025-12-17 08:27:13 [info]: Returned 5 users
+2025-12-17 08:27:24 [info]: Login attempt for email: a@gmail.com
+2025-12-17 08:27:24 [info]: User logged in successfully: 6941f94b569f20056e78db78
+2025-12-17 08:27:41 [info]: User 6941f94b569f20056e78db78 responding to friend request 6942230cb667822111c050e3 with status accepted
+2025-12-17 08:27:41 [error]: Error in respondFriendRequest resolver Chat validation failed: creator: Path `creator` is required.
+ValidationError: Chat validation failed: creator: Path `creator` is required.
+    at model.Document.invalidate (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:3370:32)
+    at validatePath (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:3145:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at model.$__validate (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:3086:3)
+    at model.validate (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:2663:5)
+    at model.validateBeforeSave (F:\sessia\chat-app\backend\node_modules\mongoose\lib\plugins\validateBeforeSave.js:34:7)
+    at Kareem.execPre (F:\sessia\chat-app\backend\node_modules\kareem\index.js:65:24)
+    at model.$__save (F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:369:5)
+    at model.save (F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:609:5)
+2025-12-17 08:27:50 [info]: User 6941f94b569f20056e78db78 responding to friend request 6942230cb667822111c050e3 with status accepted
+2025-12-17 08:27:50 [warn]: Friend request 6942230cb667822111c050e3 already processed
+2025-12-17 08:27:50 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:32:26 [info]: Fetching all users
+2025-12-17 08:32:26 [info]: Returned 5 users
+2025-12-17 08:32:28 [info]: User 6941f94b569f20056e78db78 responding to friend request 6942230cb667822111c050e3 with status accepted
+2025-12-17 08:32:28 [warn]: Friend request 6942230cb667822111c050e3 already processed
+2025-12-17 08:32:28 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:32:51 [info]: User 6941f94b569f20056e78db78 responding to friend request 6942230cb667822111c050e3 with status accepted
+2025-12-17 08:32:51 [warn]: Friend request 6942230cb667822111c050e3 already processed
+2025-12-17 08:32:51 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:06 [info]: Fetching all users
+2025-12-17 08:34:06 [info]: Returned 5 users
+2025-12-17 08:34:07 [info]: Fetching all users
+2025-12-17 08:34:07 [info]: Returned 5 users
+2025-12-17 08:34:13 [info]: User 6941f94b569f20056e78db78 sending friend request to 694204da569f20056e78db8b
+2025-12-17 08:34:13 [info]: Friend request created from 6941f94b569f20056e78db78 to 694204da569f20056e78db8b
+2025-12-17 08:34:23 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 08:34:23 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 08:34:26 [info]: User 694204da569f20056e78db8b responding to friend request 6942230cb667822111c050e3 with status accepted
+2025-12-17 08:34:26 [warn]: Friend request 6942230cb667822111c050e3 not found
+2025-12-17 08:34:26 [error]: Friend request not found
+GraphQLError: Friend request not found
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:128:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:47 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:34:47 [info]: Private chat created between 6941f94b569f20056e78db78 and 694204da569f20056e78db8b
+2025-12-17 08:34:47 [info]: Friend request 694224b56623878886554dce responded with status accepted by user 694204da569f20056e78db8b
+2025-12-17 08:34:47 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:34:47 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:34:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:49 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:34:49 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:34:49 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:50 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:34:50 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:34:50 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:35:00 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:35:00 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:35:00 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:35:00 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:06 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:06 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:06 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:07 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:07 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:07 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:07 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:07 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:07 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:08 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:08 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:08 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:08 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:08 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:08 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:09 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:09 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:09 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:09 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:35:09 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:39 [info]: Fetching all users
+2025-12-17 08:35:39 [info]: Returned 5 users
+2025-12-17 08:35:42 [info]: Fetching all users
+2025-12-17 08:35:42 [info]: Returned 5 users
+2025-12-17 08:35:44 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:35:44 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:35:44 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:24 [info]: Fetching all users
+2025-12-17 08:40:24 [info]: Returned 5 users
+2025-12-17 08:40:31 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 08:40:31 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 08:40:33 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status accepted
+2025-12-17 08:40:33 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:33 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:38 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:38 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:38 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:38 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:38 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:38 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:38 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:38 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:38 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:39 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:39 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:39 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:39 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:39 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:39 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:40 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:40 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:40 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:40 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:40 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:41 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:41 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:41 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:41 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:42 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:42 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:42 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:42 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:42 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:42 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:42 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:42 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:42 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:44 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:44 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:44 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:45 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:45 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:45 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:45 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:45 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:45 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:46 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:46 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:46 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:46 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:46 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:46 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:47 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:47 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:47 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:47 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:47 [info]: User 694204da569f20056e78db8b responding to friend request 694224b56623878886554dce with status rejected
+2025-12-17 08:40:47 [warn]: Friend request 694224b56623878886554dce already processed
+2025-12-17 08:40:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:46:34 [info]: Fetching all users
+2025-12-17 08:46:34 [info]: Returned 5 users
+2025-12-17 08:46:35 [info]: Fetching all users
+2025-12-17 08:46:35 [info]: Returned 5 users
+2025-12-17 08:46:36 [info]: Fetching all users
+2025-12-17 08:46:36 [info]: Returned 5 users
+2025-12-17 08:46:37 [info]: Fetching all users
+2025-12-17 08:46:37 [info]: Returned 5 users
+2025-12-17 08:46:46 [info]: User 694204da569f20056e78db8b sending friend request to 694211d0eefde916b8fc81be
+2025-12-17 08:46:46 [info]: Friend request created from 694204da569f20056e78db8b to 694211d0eefde916b8fc81be
+2025-12-17 08:47:01 [info]: Login attempt for email: ak@gmail.com
+2025-12-17 08:47:01 [info]: User logged in successfully: 694211d0eefde916b8fc81be
+2025-12-17 08:47:04 [info]: User 694211d0eefde916b8fc81be responding to friend request 694227a66623878886554e42 with status accepted
+2025-12-17 08:47:04 [info]: Private chat created between 694204da569f20056e78db8b and 694211d0eefde916b8fc81be
+2025-12-17 08:47:04 [info]: Friend request 694227a66623878886554e42 responded with status accepted by user 694211d0eefde916b8fc81be
+2025-12-17 08:47:07 [info]: Fetching all users
+2025-12-17 08:47:07 [info]: Returned 5 users
+2025-12-17 08:47:08 [info]: Fetching all users
+2025-12-17 08:47:08 [info]: Returned 5 users
+2025-12-17 08:47:09 [info]: Fetching all users
+2025-12-17 08:47:09 [info]: Returned 5 users
+2025-12-17 08:47:09 [info]: Fetching all users
+2025-12-17 08:47:09 [info]: Returned 5 users
+2025-12-17 08:49:53 [info]: Fetching all users
+2025-12-17 08:49:53 [info]: Returned 5 users
+2025-12-17 08:49:58 [info]: User 694211d0eefde916b8fc81be sending friend request to 6941fcb0569f20056e78db7e
+2025-12-17 08:49:58 [info]: Friend request created from 694211d0eefde916b8fc81be to 6941fcb0569f20056e78db7e
+2025-12-17 08:52:05 [info]: User 694211d0eefde916b8fc81be sending friend request to 6941f94b569f20056e78db78
+2025-12-17 08:52:05 [info]: Friend request created from 694211d0eefde916b8fc81be to 6941f94b569f20056e78db78
+2025-12-17 08:52:08 [info]: Fetching all users
+2025-12-17 08:52:09 [info]: Returned 5 users
+2025-12-17 08:52:32 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 08:52:33 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 08:58:33 [info]: Fetching all users
+2025-12-17 08:58:33 [info]: Returned 5 users
+2025-12-17 08:58:33 [info]: Fetching all users
+2025-12-17 08:58:33 [info]: Returned 5 users
+2025-12-17 09:03:12 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:12 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:12 [info]: Returned 2 chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:12 [info]: Returned 2 chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:13 [info]: Fetching all users
+2025-12-17 09:03:13 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:13 [info]: Returned 5 users
+2025-12-17 09:03:13 [info]: Returned 2 chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:13 [info]: Fetching all users
+2025-12-17 09:03:13 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:03:13 [info]: Returned 5 users
+2025-12-17 09:03:13 [info]: Returned 2 chats for user 694204da569f20056e78db8b
+2025-12-17 09:06:49 [info]: User 694204da569f20056e78db8b creating chat with members: 694204da569f20056e78db8b
+2025-12-17 09:06:49 [info]: Chat 69422c596623878886554e9e created by user 694204da569f20056e78db8b
+2025-12-17 09:06:49 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:06:49 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 09:14:59 [info]: Fetching all users
+2025-12-17 09:14:59 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:14:59 [info]: Returned 5 users
+2025-12-17 09:14:59 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 09:18:26 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 09:18:26 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 09:18:26 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:18:26 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 09:28:10 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 09:28:10 [info]: User logged in successfully: 694204da569f20056e78db8b
+2025-12-17 09:31:49 [info]: Fetching all users
+2025-12-17 09:31:49 [info]: Returned 5 users
+2025-12-17 09:31:49 [info]: Fetching all users
+2025-12-17 09:31:49 [info]: Returned 5 users
+2025-12-17 09:46:51 [info]: Fetching all users
+2025-12-17 09:46:51 [info]: Returned 5 users
+2025-12-17 09:52:59 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 09:52:59 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 10:09:56 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 10:09:56 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 10:09:57 [info]: User 694204da569f20056e78db8b fetching messages for chat 694227b86623878886554e4e
+2025-12-17 10:09:57 [info]: Returned 0 messages for chat 694227b86623878886554e4e to user 694204da569f20056e78db8b
+2025-12-17 10:13:30 [info]: Fetching all users
+2025-12-17 10:13:30 [info]: Returned 5 users
+2025-12-17 10:13:36 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 10:13:36 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 10:13:37 [info]: User 694204da569f20056e78db8b fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:13:37 [info]: Returned 0 messages for chat 694224d76623878886554ddb to user 694204da569f20056e78db8b
+2025-12-17 10:13:40 [info]: User 694204da569f20056e78db8b fetching messages for chat 694227b86623878886554e4e
+2025-12-17 10:13:40 [info]: Returned 0 messages for chat 694227b86623878886554e4e to user 694204da569f20056e78db8b
+2025-12-17 10:13:44 [info]: User 694204da569f20056e78db8b fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:13:44 [info]: Returned 0 messages for chat 694224d76623878886554ddb to user 694204da569f20056e78db8b
+2025-12-17 10:15:19 [info]: Fetching all users
+2025-12-17 10:15:19 [info]: Returned 5 users
+2025-12-17 10:15:21 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 10:15:21 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 10:15:22 [info]: User 694204da569f20056e78db8b fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:15:22 [info]: Returned 0 messages for chat 694224d76623878886554ddb to user 694204da569f20056e78db8b
+2025-12-17 10:17:41 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:17:41 [info]: Message 69423cf56cfb45b1daa5ccee sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:18 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:18 [info]: Message 69423ebe6cfb45b1daa5ccf7 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:23 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:23 [info]: Message 69423ec36cfb45b1daa5cd00 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:29 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:29 [info]: Message 69423ec96cfb45b1daa5cd09 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:30 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:30 [info]: Message 69423eca6cfb45b1daa5cd12 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:32 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:32 [info]: Message 69423ecc6cfb45b1daa5cd1b sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:33 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:33 [info]: Message 69423ecd6cfb45b1daa5cd24 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:34 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:34 [info]: Message 69423ece6cfb45b1daa5cd2d sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:36 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:36 [info]: Message 69423ed06cfb45b1daa5cd36 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:37 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:37 [info]: Message 69423ed16cfb45b1daa5cd3f sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:25:38 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:25:38 [info]: Message 69423ed26cfb45b1daa5cd48 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:26:26 [info]: Login attempt for email: a@gmail.com
+2025-12-17 10:26:26 [info]: User logged in successfully: 6941f94b569f20056e78db78
+2025-12-17 10:26:26 [info]: Fetching all users
+2025-12-17 10:26:26 [info]: Returned 5 users
+2025-12-17 10:26:32 [info]: Fetching chats for user 6941f94b569f20056e78db78
+2025-12-17 10:26:32 [info]: Returned 1 chats for user 6941f94b569f20056e78db78
+2025-12-17 10:26:33 [info]: User 6941f94b569f20056e78db78 fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:26:33 [info]: Returned 11 messages for chat 694224d76623878886554ddb to user 6941f94b569f20056e78db78
+2025-12-17 10:26:39 [info]: User 6941f94b569f20056e78db78 sending message to chat 694224d76623878886554ddb
+2025-12-17 10:26:39 [info]: Message 69423f0f6cfb45b1daa5cd5f sent by user 6941f94b569f20056e78db78 to chat 694224d76623878886554ddb
+2025-12-17 10:26:42 [info]: User 6941f94b569f20056e78db78 sending message to chat 694224d76623878886554ddb
+2025-12-17 10:26:42 [info]: Message 69423f126cfb45b1daa5cd68 sent by user 6941f94b569f20056e78db78 to chat 694224d76623878886554ddb
+2025-12-17 10:26:44 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:26:44 [info]: Message 69423f146cfb45b1daa5cd71 sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:26:47 [info]: Fetching all users
+2025-12-17 10:26:47 [info]: Returned 5 users
+2025-12-17 10:26:49 [info]: Fetching chats for user 6941f94b569f20056e78db78
+2025-12-17 10:26:49 [info]: Returned 1 chats for user 6941f94b569f20056e78db78
+2025-12-17 10:26:50 [info]: User 6941f94b569f20056e78db78 fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:26:50 [info]: Returned 14 messages for chat 694224d76623878886554ddb to user 6941f94b569f20056e78db78
+2025-12-17 10:31:03 [info]: Fetching all users
+2025-12-17 10:31:03 [info]: Returned 5 users
+2025-12-17 10:31:04 [info]: Fetching all users
+2025-12-17 10:31:04 [info]: Returned 5 users
+2025-12-17 10:31:06 [info]: Fetching chats for user 6941f94b569f20056e78db78
+2025-12-17 10:31:06 [info]: Returned 1 chats for user 6941f94b569f20056e78db78
+2025-12-17 10:31:06 [info]: Fetching chats for user 694204da569f20056e78db8b
+2025-12-17 10:31:06 [info]: Returned 3 chats for user 694204da569f20056e78db8b
+2025-12-17 10:31:09 [info]: User 6941f94b569f20056e78db78 fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:31:09 [info]: Returned 14 messages for chat 694224d76623878886554ddb to user 6941f94b569f20056e78db78
+2025-12-17 10:31:12 [info]: User 694204da569f20056e78db8b fetching messages for chat 694224d76623878886554ddb
+2025-12-17 10:31:12 [info]: Returned 14 messages for chat 694224d76623878886554ddb to user 694204da569f20056e78db8b
+2025-12-17 10:31:14 [info]: User 694204da569f20056e78db8b sending message to chat 694224d76623878886554ddb
+2025-12-17 10:31:14 [info]: Message 694240226cfb45b1daa5cd9e sent by user 694204da569f20056e78db8b to chat 694224d76623878886554ddb
+2025-12-17 10:31:16 [info]: User 6941f94b569f20056e78db78 sending message to chat 694224d76623878886554ddb
+2025-12-17 10:31:16 [info]: Message 694240246cfb45b1daa5cda7 sent by user 6941f94b569f20056e78db78 to chat 694224d76623878886554ddb
+2025-12-17 10:48:51 [info]: Fetching all users
+2025-12-17 10:48:51 [info]: Returned 1 users
+2025-12-17 10:49:06 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 10:49:06 [warn]: Login failed: invalid credentials for email: akzholkozhatai@gmail.com
+2025-12-17 10:49:06 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:125:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 10:49:22 [info]: Register attempt for username: akzholkozhatai@gmail.com, email: akzholkozhatai@gmail.com
+2025-12-17 10:49:22 [info]: User registered successfully: 6942446231f6f171a3b61e21
+2025-12-17 10:49:26 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 10:49:26 [info]: Returned 0 chats for user 6942446231f6f171a3b61e21
+2025-12-17 10:50:13 [info]: Fetching all users
+2025-12-17 10:50:13 [info]: Returned 2 users
+2025-12-17 10:50:26 [info]: Register attempt for username: dias, email: dias@gmail.com
+2025-12-17 10:50:26 [info]: User registered successfully: 694244a231f6f171a3b61e2a
+2025-12-17 10:50:31 [info]: Fetching all users
+2025-12-17 10:50:31 [info]: Returned 3 users
+2025-12-17 10:50:32 [info]: Fetching all users
+2025-12-17 10:50:32 [info]: Returned 3 users
+2025-12-17 10:50:33 [info]: Fetching all users
+2025-12-17 10:50:33 [info]: Returned 3 users
+2025-12-17 10:50:34 [info]: Fetching all users
+2025-12-17 10:50:34 [info]: Returned 3 users
+2025-12-17 10:50:43 [info]: Login attempt for email: dias@gmail.com
+2025-12-17 10:50:43 [info]: User logged in successfully: 694244a231f6f171a3b61e2a
+2025-12-17 10:50:49 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 10:50:49 [info]: User logged in successfully: 6942446231f6f171a3b61e21
+2025-12-17 10:50:54 [info]: User 6942446231f6f171a3b61e21 sending friend request to 694244a231f6f171a3b61e2a
+2025-12-17 10:50:54 [info]: Friend request created from 6942446231f6f171a3b61e21 to 694244a231f6f171a3b61e2a
+2025-12-17 10:50:56 [info]: Fetching all users
+2025-12-17 10:50:56 [info]: Returned 3 users
+2025-12-17 10:51:00 [info]: User 694244a231f6f171a3b61e2a responding to friend request 694244be31f6f171a3b61e3b with status accepted
+2025-12-17 10:51:00 [info]: Private chat created between 6942446231f6f171a3b61e21 and 694244a231f6f171a3b61e2a
+2025-12-17 10:51:00 [info]: Friend request 694244be31f6f171a3b61e3b responded with status accepted by user 694244a231f6f171a3b61e2a
+2025-12-17 10:51:05 [info]: Fetching all users
+2025-12-17 10:51:05 [info]: Returned 3 users
+2025-12-17 10:51:13 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 10:51:13 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 10:51:15 [info]: Fetching chats for user 694244a231f6f171a3b61e2a
+2025-12-17 10:51:15 [info]: Returned 1 chats for user 694244a231f6f171a3b61e2a
+2025-12-17 10:51:16 [info]: User 694244a231f6f171a3b61e2a fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 10:51:16 [info]: Returned 0 messages for chat 694244c431f6f171a3b61e49 to user 694244a231f6f171a3b61e2a
+2025-12-17 10:56:48 [info]: User 6942446231f6f171a3b61e21 fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 10:56:48 [info]: Returned 0 messages for chat 694244c431f6f171a3b61e49 to user 6942446231f6f171a3b61e21
+2025-12-17 10:56:51 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 10:56:51 [info]: Message 6942462331f6f171a3b61e61 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:01:54 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 11:01:54 [info]: User logged in successfully: 6942446231f6f171a3b61e21
+2025-12-17 11:01:54 [info]: Fetching all users
+2025-12-17 11:01:54 [info]: Returned 3 users
+2025-12-17 11:01:58 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:01:58 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:01:58 [info]: User 6942446231f6f171a3b61e21 fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:01:58 [info]: Returned 1 messages for chat 694244c431f6f171a3b61e49 to user 6942446231f6f171a3b61e21
+2025-12-17 11:02:05 [info]: Fetching all users
+2025-12-17 11:02:05 [info]: Returned 3 users
+2025-12-17 11:02:08 [info]: Fetching chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:02:08 [info]: Returned 1 chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:02:09 [info]: User 694244a231f6f171a3b61e2a fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:02:09 [info]: Returned 1 messages for chat 694244c431f6f171a3b61e49 to user 694244a231f6f171a3b61e2a
+2025-12-17 11:02:11 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:02:11 [info]: Message 69424763d7cab347855282d6 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:02:16 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:02:16 [info]: Message 69424768d7cab347855282df sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:04:13 [info]: User 694244a231f6f171a3b61e2a sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:04:13 [info]: Message 694247ddd7cab347855282e8 sent by user 694244a231f6f171a3b61e2a to chat 694244c431f6f171a3b61e49
+2025-12-17 11:04:17 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:04:18 [info]: Message 694247e1d7cab347855282f1 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:04:20 [info]: Fetching all users
+2025-12-17 11:04:20 [info]: Returned 3 users
+2025-12-17 11:04:23 [info]: Fetching chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:04:23 [info]: Returned 1 chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:04:23 [info]: User 694244a231f6f171a3b61e2a fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:04:23 [info]: Returned 5 messages for chat 694244c431f6f171a3b61e49 to user 694244a231f6f171a3b61e2a
+2025-12-17 11:13:20 [info]: Fetching all users
+2025-12-17 11:13:20 [info]: Returned 3 users
+2025-12-17 11:13:23 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:13:23 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:13:25 [info]: User 6942446231f6f171a3b61e21 fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:25 [info]: Returned 5 messages for chat 694244c431f6f171a3b61e49 to user 6942446231f6f171a3b61e21
+2025-12-17 11:13:27 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:27 [info]: Message 69424a07d7cab34785528312 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:30 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:30 [info]: Message 69424a0ad7cab3478552831b sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:47 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:47 [info]: Message 69424a1bd7cab34785528324 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:50 [info]: Fetching all users
+2025-12-17 11:13:50 [info]: Returned 3 users
+2025-12-17 11:13:50 [info]: Fetching all users
+2025-12-17 11:13:50 [info]: Returned 3 users
+2025-12-17 11:13:53 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:13:53 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:13:53 [info]: User 6942446231f6f171a3b61e21 fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:53 [info]: Returned 8 messages for chat 694244c431f6f171a3b61e49 to user 6942446231f6f171a3b61e21
+2025-12-17 11:13:55 [info]: Fetching chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:13:55 [info]: Returned 1 chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:13:56 [info]: User 694244a231f6f171a3b61e2a fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:56 [info]: Returned 8 messages for chat 694244c431f6f171a3b61e49 to user 694244a231f6f171a3b61e2a
+2025-12-17 11:13:58 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:13:58 [info]: Message 69424a26d7cab34785528345 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:14:21 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:14:21 [info]: Message 69424a3dd7cab3478552834e sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:14:25 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:14:25 [info]: Message 69424a41d7cab34785528357 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:15:39 [info]: Fetching all users
+2025-12-17 11:15:39 [info]: Returned 3 users
+2025-12-17 11:15:43 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:15:43 [info]: Message 69424a8fd7cab34785528364 sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:17:53 [info]: User 6942446231f6f171a3b61e21 sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:17:53 [info]: Message 69424b11d7cab3478552836d sent by user 6942446231f6f171a3b61e21 to chat 694244c431f6f171a3b61e49
+2025-12-17 11:18:48 [info]: Fetching all users
+2025-12-17 11:18:48 [info]: Returned 3 users
+2025-12-17 11:19:50 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:19:50 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:28:01 [info]: Fetching all users
+2025-12-17 11:28:01 [info]: Returned 3 users
+2025-12-17 11:28:06 [info]: Login attempt for email: akzholkozhatai@gmail.com
+2025-12-17 11:28:06 [info]: User logged in successfully: 6942446231f6f171a3b61e21
+2025-12-17 11:28:07 [info]: Fetching all users
+2025-12-17 11:28:07 [info]: Returned 3 users
+2025-12-17 11:28:08 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:28:08 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:28:18 [info]: User 6942446231f6f171a3b61e21 fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:28:18 [info]: Returned 13 messages for chat 694244c431f6f171a3b61e49 to user 6942446231f6f171a3b61e21
+2025-12-17 11:28:24 [info]: Fetching all users
+2025-12-17 11:28:24 [info]: Returned 3 users
+2025-12-17 11:28:26 [info]: Fetching chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:28:26 [info]: Returned 1 chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:28:27 [info]: User 694244a231f6f171a3b61e2a fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:28:27 [info]: Returned 13 messages for chat 694244c431f6f171a3b61e49 to user 694244a231f6f171a3b61e2a
+2025-12-17 11:28:32 [info]: User 694244a231f6f171a3b61e2a sending message to chat 694244c431f6f171a3b61e49
+2025-12-17 11:28:32 [info]: Message 69424d90d7cab3478552839c sent by user 694244a231f6f171a3b61e2a to chat 694244c431f6f171a3b61e49
+2025-12-17 11:30:47 [info]: Fetching chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:30:47 [info]: User 694244a231f6f171a3b61e2a fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:30:47 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:30:47 [info]: Fetching chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:30:47 [info]: Returned 1 chats for user 694244a231f6f171a3b61e2a
+2025-12-17 11:30:47 [info]: User 6942446231f6f171a3b61e21 fetching messages for chat 694244c431f6f171a3b61e49
+2025-12-17 11:30:47 [info]: Returned 14 messages for chat 694244c431f6f171a3b61e49 to user 694244a231f6f171a3b61e2a
+2025-12-17 11:30:47 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:30:47 [info]: Returned 14 messages for chat 694244c431f6f171a3b61e49 to user 6942446231f6f171a3b61e21
+2025-12-17 11:30:47 [info]: Returned 1 chats for user 6942446231f6f171a3b61e21
+2025-12-17 11:37:43 [info]: Register attempt for username: testuser, email: test@test.com
+2025-12-17 11:37:43 [info]: User registered successfully: 69424fb719eaf63af0dabb2d
+2025-12-17 11:37:44 [info]: Login attempt for email: test@test.com
+2025-12-17 11:37:44 [info]: User logged in successfully: 69424fb719eaf63af0dabb2d

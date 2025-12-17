@@ -13,29 +13,26 @@ interface FriendRequestInput {
 export const friendRequestResolvers = {
   Query: {
     getFriendRequests: async (_: unknown, __: unknown, context: any) => {
-      try {
-        if (!context.user) {
-          logger.warn('Unauthorized access to getFriendRequests');
-          throw new GraphQLError('Not authenticated', {
-            extensions: { code: 'UNAUTHORIZED' },
-          });
-        }
+    if (!context.user) {
+      throw new GraphQLError('Not authenticated', {
+        extensions: { code: 'UNAUTHORIZED' },
+      });
+    }
 
-        const userId = context.user.userId;
-        logger.info(`Fetching friend requests for user ${userId}`);
+    const userId = context.user.userId;
 
-        const requests = await FriendRequest.find({
-          recipient: userId,
-          isDeleted: false,
-        }).populate('requester').populate('recipient');
+    const requests = await FriendRequest.find({
+      $or: [
+        { requester: userId },
+        { recipient: userId },
+      ],
+      isDeleted: false,
+    })
+      .populate('requester')
+      .populate('recipient');
 
-        logger.info(`Returned ${requests.length} friend requests for user ${userId}`);
-        return requests;
-      } catch (error: any) {
-        logger.error('Error in getFriendRequests resolver', error);
-        throw error;
-      }
-    },
+    return requests;
+  },
   },
 
   Mutation: {
@@ -164,6 +161,7 @@ export const friendRequestResolvers = {
             await Chat.create({
               type: 'private',
               isPrivate: true,
+              creator: new Types.ObjectId(requesterId), 
               members: [new Types.ObjectId(requesterId), new Types.ObjectId(recipientId)],
               isDeleted: false,
             });

@@ -30,3 +30,265 @@ GraphQLError: Invalid credentials
 GraphQLError: Invalid credentials
     at Object.loginUser (C:\Users\Dias\Desktop\chat-app\backend\src\graphql\user\resolvers.ts:123:17)
     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 05:27:25 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:131:17)
+2025-12-17 05:42:03 [error]: User already exists
+GraphQLError: User already exists
+    at Object.registerUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:79:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 06:50:09 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:131:17)
+2025-12-17 08:10:37 [error]: Friend request already sent
+GraphQLError: Friend request already sent
+    at Object.sendFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:87:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:12:59 [error]: Friend request already sent
+GraphQLError: Friend request already sent
+    at Object.sendFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:87:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:14:29 [error]: Friend request already sent
+GraphQLError: Friend request already sent
+    at Object.sendFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:87:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:27:41 [error]: Error in respondFriendRequest resolver Chat validation failed: creator: Path `creator` is required.
+ValidationError: Chat validation failed: creator: Path `creator` is required.
+    at model.Document.invalidate (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:3370:32)
+    at validatePath (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:3145:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at model.$__validate (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:3086:3)
+    at model.validate (F:\sessia\chat-app\backend\node_modules\mongoose\lib\document.js:2663:5)
+    at model.validateBeforeSave (F:\sessia\chat-app\backend\node_modules\mongoose\lib\plugins\validateBeforeSave.js:34:7)
+    at Kareem.execPre (F:\sessia\chat-app\backend\node_modules\kareem\index.js:65:24)
+    at model.$__save (F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:369:5)
+    at model.save (F:\sessia\chat-app\backend\node_modules\mongoose\lib\model.js:609:5)
+2025-12-17 08:27:50 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:32:28 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:32:51 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:26 [error]: Friend request not found
+GraphQLError: Friend request not found
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:128:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:49 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:34:50 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:00 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:06 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:07 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:07 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:08 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:09 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:35:44 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:33 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:38 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:38 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:38 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:39 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:40 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:41 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:42 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:42 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:42 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:44 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:45 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:45 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:46 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:46 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 08:40:47 [error]: Friend request already processed
+GraphQLError: Friend request already processed
+    at Object.respondFriendRequest (F:\sessia\chat-app\backend\src\graphql\friendRequest\resolvers.ts:142:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-17 10:49:06 [error]: Invalid credentials
+GraphQLError: Invalid credentials
+    at Object.loginUser (F:\sessia\chat-app\backend\src\graphql\user\resolvers.ts:125:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

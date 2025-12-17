@@ -134,7 +134,7 @@ export const messageResolvers = {
         (payload: any, variables: { chatId: string } | undefined, context: any) => {
           if (!context.user) return false;
           if (!variables?.chatId) return false;
-          return payload.messageSent.chat._id.toString() === variables.chatId;
+         return payload.messageSent?.chat?._id?.toString() === variables.chatId;
         }
       ),
     },

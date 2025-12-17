@@ -20,31 +20,36 @@ async function startServer() {
   await connectDB();
 
   const app = express();
-  app.use(cors());
+
+  app.use(
+    cors({
+      origin: 'http://localhost:3000',
+      credentials: true,
+    })
+  );
   app.use(express.json());
 
+ 
   app.use(authMiddleware);
 
   const httpServer = http.createServer(app);
 
- 
-  const schema = makeExecutableSchema({
-    typeDefs,
-    resolvers,
-  });
+
+  const schema = makeExecutableSchema({ typeDefs, resolvers });
+
 
   const apolloServer = new ApolloServer({
     schema,
     context: ({ req }: { req: AuthRequest }) => {
-    
       return { user: req.user };
     },
   });
-
   await apolloServer.start();
-  apolloServer.applyMiddleware({ app: app as any });
 
- 
+
+  apolloServer.applyMiddleware({ app: app as any, cors: false });
+
+
   const wsServer = new WebSocketServer({
     server: httpServer,
     path: apolloServer.graphqlPath,
@@ -54,8 +59,8 @@ async function startServer() {
     {
       schema,
       context: (ctx: any) => {
-       
-        const token = ctx.connectionParams?.Authorization?.split(' ')[1];
+        
+        const token = ctx.connectionParams?.authToken;
         if (!token) return { user: null };
 
         try {

@@ -4,7 +4,7 @@ import { FriendRequest } from '../../models/FriendRequest';
 import { GraphQLError } from 'graphql';
 import { Types } from 'mongoose';
 import { logger } from '../../utils/logger'; 
-
+import { pubsub, MESSAGE_SENT } from '../../utils/pubsub';
 interface CreateChatInput {
   title?: string;
   isPrivate: boolean;
@@ -277,4 +277,16 @@ export const chatResolvers = {
       }
     },
   },
+  Subscription: {
+  messageSent: {
+    subscribe: (_: any, { chatId }: { chatId: string }, context: any) => {
+      if (!context.user) {
+        throw new GraphQLError('Not authenticated', { extensions: { code: 'UNAUTHORIZED' } });
+      }
+      // Каждый чат имеет свой уникальный канал подписки
+      return pubsub.asyncIterator(`${MESSAGE_SENT}_${chatId}`);
+    },
+  },
+},
+
 };
