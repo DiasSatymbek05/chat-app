@@ -1,17 +1,40 @@
 "use client";
 
-import { ReactNode } from "react";
-import { useAuthStore } from "../stores/useAuthStore";
+import { useState } from "react";
+import ProtectedRoute from "./components/ProtectedRoute";
+import AppLayout from "./layouts/AppLayout";
+import UserList from "./components/UserList";
+import ChatList from "./components/ChatList";
+import ChatWindow from "./components/ChatWindow";
+import { Chat } from "./types";
 
-export default function HomePage({ children }: { children?: ReactNode }) {
-  const { user } = useAuthStore();
+export default function HomePage() {
+  const [showChats, setShowChats] = useState<boolean>(false);
+  const [selectedChat, setSelectedChat] = useState<Chat | null>(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 p-4">
-      <h1 className="text-2xl font-bold mb-4">
-        Welcome {user?.username ?? "to Chat App"}
-      </h1>
-      {children}
-    </div>
+    <ProtectedRoute>
+      <AppLayout showChats={showChats} setShowChats={setShowChats}>
+        <div className="flex gap-6 h-full">
+          {}
+          {showChats ? (
+            <ChatList onSelectChat={(chat) => setSelectedChat(chat)} />
+          ) : (
+            <UserList />
+          )}
+
+          {}
+          {selectedChat ? (
+            <ChatWindow chatId={selectedChat.id} />
+          ) : (
+            <main className="flex-1 bg-white p-6 rounded-lg shadow-md min-h-[calc(100vh-4rem)] flex items-center justify-center">
+              <h1 className="text-4xl font-bold text-gray-800">
+                Welcome to the App!
+              </h1>
+            </main>
+          )}
+        </div>
+      </AppLayout>
+    </ProtectedRoute>
   );
 }

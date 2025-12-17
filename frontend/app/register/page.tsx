@@ -2,188 +2,129 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { registerSchema } from "../components/Form/authSchemas";
+import { z } from "zod";
+import { gql } from "@apollo/client";
 import { useMutation } from "@apollo/client/react";
-import { REGISTER_USER } from "../../graphql/mutation";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import Link from "next/link";
+import { useAuthStore } from "../../stores/useAuthStore";
 
-type RegisterFormData = {
-  username: string;
-  firstName: string;
-  lastName: string;
-  dateOfBirth?: string;
-  email: string;
-  password: string;
-};
-
-type RegisterUserResponse = {
+interface RegisterUserMutation {
   registerUser: {
-    id: string;
-    email: string;
-    username: string;
+    token: string;
+    user: { id: string; username: string; email: string };
   };
-};
+}
 
-type RegisterUserVariables = {
-  input: RegisterFormData;
-};
+interface RegisterUserVariables {
+  input: {
+    username: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    password: string;
+  };
+}
+
+const registerSchema = z.object({
+  username: z.string().min(3),
+  firstName: z.string().min(1),
+  lastName: z.string().min(1),
+  email: z.string().email(),
+  password: z.string().min(6),
+});
+
+const REGISTER_USER = gql`
+  mutation RegisterUser($input: RegisterInput!) {
+    registerUser(input: $input) {
+      token
+      user {
+        id
+        username
+        email
+      }
+    }
+  }
+`;
 
 export default function RegisterPage() {
-  const router = useRouter();
-  const [showPassword, setShowPassword] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<RegisterFormData>({
+  const { register, handleSubmit } = useForm({
     resolver: zodResolver(registerSchema),
   });
 
+  const setUser = useAuthStore((state) => state.setUser);
+  const router = useRouter();
+
   const [registerUser, { loading, error }] = useMutation<
-    RegisterUserResponse,
+    RegisterUserMutation,
     RegisterUserVariables
-  >(REGISTER_USER);
+  >(REGISTER_USER, {
+    onCompleted: (data) => {
+      setUser(data.registerUser.user, data.registerUser.token);
+      router.push("/");
+    },
+  });
 
-  const onSubmit = async (data: RegisterFormData) => {
-    try {
-      const res = await registerUser({ variables: { input: data } });
-      if (!res.data) return;
-
-      router.push("/login");
-    } catch (err) {
-      console.error("Register error:", err);
-    }
+  const onSubmit = (values: RegisterUserVariables["input"]) => {
+    registerUser({ variables: { input: values } });
   };
 
   return (
-    <div className="flex items-center justify-center min-h-[60vh] bg-gradient-to-r from-blue-100 to-indigo-200 px-4">
-      <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="max-w-md w-full p-10 bg-white shadow-lg rounded-xl">
         <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
           Регистрация
         </h1>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          {/* Username */}
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">Username</label>
-            <input
-              type="text"
-              placeholder="Введите username"
-              {...register("username")}
-              className={`w-full p-3 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-                errors.username ? "border-red-500" : "border-gray-300"
-              }`}
-            />
-            {errors.username && (
-              <p className="text-red-500 text-sm mt-1">{errors.username.message}</p>
-            )}
-          </div>
+          <input
+            {...register("username")}
+            placeholder="Username"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50 text-gray-900"
+          />
+          <input
+            {...register("firstName")}
+            placeholder="Имя"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50 text-gray-900"
+          />
+          <input
+            {...register("lastName")}
+            placeholder="Фамилия"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50 text-gray-900"
+          />
+          <input
+            {...register("email")}
+            placeholder="Email"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50 text-gray-900"
+          />
+          <input
+            {...register("password")}
+            type="password"
+            placeholder="Пароль"
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-50 text-gray-900"
+          />
 
-          {/* First Name */}
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">Имя</label>
-            <input
-              type="text"
-              placeholder="Введите имя"
-              {...register("firstName")}
-              className={`w-full p-3 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-                errors.firstName ? "border-red-500" : "border-gray-300"
-              }`}
-            />
-            {errors.firstName && (
-              <p className="text-red-500 text-sm mt-1">{errors.firstName.message}</p>
-            )}
-          </div>
-
-          {/* Last Name */}
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">Фамилия</label>
-            <input
-              type="text"
-              placeholder="Введите фамилию"
-              {...register("lastName")}
-              className={`w-full p-3 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-                errors.lastName ? "border-red-500" : "border-gray-300"
-              }`}
-            />
-            {errors.lastName && (
-              <p className="text-red-500 text-sm mt-1">{errors.lastName.message}</p>
-            )}
-          </div>
-
-          {/* Date of Birth */}
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">Дата рождения</label>
-            <input
-              type="date"
-              {...register("dateOfBirth")}
-              className="w-full p-3 text-black border rounded-lg border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-          </div>
-
-          {/* Email */}
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">Email</label>
-            <input
-              type="email"
-              placeholder="Введите email"
-              {...register("email")}
-              className={`w-full p-3 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-                errors.email ? "border-red-500" : "border-gray-300"
-              }`}
-            />
-            {errors.email && (
-              <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-            )}
-          </div>
-
-          {/* Password */}
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">Пароль</label>
-            <div className="relative">
-              <input
-                type={showPassword ? "text" : "password"}
-                placeholder="Введите пароль"
-                {...register("password")}
-                className={`w-full p-3 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-                  errors.password ? "border-red-500" : "border-gray-300"
-                }`}
-              />
-              <button
-                type="button"
-                onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 text-sm"
-              >
-                {showPassword ? "Скрыть" : "Показать"}
-              </button>
-            </div>
-            {errors.password && (
-              <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>
-            )}
-          </div>
-
-          {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition duration-200 disabled:opacity-50"
             disabled={loading}
+            className="w-full bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition font-semibold"
           >
             {loading ? "Регистрация..." : "Зарегистрироваться"}
           </button>
 
-          {error && <p className="text-red-500 text-center mt-2">{error.message}</p>}
+          {error && (
+            <p className="text-red-500 text-center mt-2">{error.message}</p>
+          )}
         </form>
 
-        <p className="text-center text-gray-600 mt-4 text-sm">
+        <p className="mt-6 text-center text-gray-600">
           Уже есть аккаунт?{" "}
-          <span
-            onClick={() => router.push("/login")}
-            className="text-blue-500 font-medium hover:underline cursor-pointer"
+          <Link
+            href="/login"
+            className="text-green-500 hover:underline font-medium"
           >
             Войти
-          </span>
+          </Link>
         </p>
       </div>
     </div>

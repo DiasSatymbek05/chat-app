@@ -1,16 +1,24 @@
+// app/layout.tsx
+"use client";
+import './globals.css';
+import { ReactNode } from "react";
+import { ApolloProvider } from "@apollo/client/react";
+import { apolloClient } from "../lib/apollo";
 
-import "./globals.css";
-import ApolloWrapper from "./ApolloWrapper";
+interface RootLayoutProps {
+  children: ReactNode;
+}
 
-export const metadata = {
-  title: "Chat App",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <title>ChatApp</title>
+      </head>
       <body>
-        <ApolloWrapper>{children}</ApolloWrapper>
+        <ApolloProvider client={apolloClient}>
+          {children}
+        </ApolloProvider>
       </body>
     </html>
   );
